@@ -106,3 +106,8 @@ responses:
 
       where: |
         {{ slots.name | capitalize }} находится в зоне {{ state.state }}
+      sensor_value: |
+        Текущее значение: {{ state.state_with_unit }}
+
+      sensor_value_temperature: |
+        Температура {{ state.state_with_unit }}
